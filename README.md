@@ -10,7 +10,6 @@ This step must be used with a wercker box build with [Docker Support](http://dev
 | Release date | Step version | Docker version |
 | -------------| -------------| ---------------|
 | 2014-11-28   | 1.0.0        | 1.3.1          |
-| -------------| -------------| ---------------|
 
 
 ## Options
@@ -28,8 +27,8 @@ The following example build a package as a Docker image with the sha1 of the com
 
 ```
 build:
-steps:
-...
-- nhuray/docker-build:
-tag: ${WERCKER_GIT_COMMIT:0:7}
+  steps:
+    ...
+    - nhuray/docker-build:
+        tag: ${WERCKER_GIT_COMMIT:0:7}
 ```
