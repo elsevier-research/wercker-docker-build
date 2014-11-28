@@ -36,7 +36,7 @@ if ! type_exists 'docker'; then
 fi
 
 # Check a Dockerfile is present
-if [ -f 'Dockerfile' ]; then
+if [ ! -f 'Dockerfile' ]; then
   fail 'A Dockerfile is required.'
   info 'Please create a Dockerfile : https://docs.docker.com/reference/builder/'
   exit 1
