@@ -2,7 +2,7 @@
 
 This wercker step just build your package as a [Docker](https://docs.docker.com/reference/commandline/cli/#build) image.
 
-This step must be used with a wercker box build with [Docker Support](http://devcenter.wercker.com/articles/docker)
+This step must be used with a wercker box built with [Docker Support](http://devcenter.wercker.com/articles/docker)
 
 
 ## Versions
